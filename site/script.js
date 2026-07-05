@@ -15,5 +15,15 @@ nav.querySelectorAll("a").forEach((link) => {
   });
 });
 
+// Build dynamic email subject from name + phone before submitting
+const form = document.getElementById("contact-form");
+if (form) {
+  form.addEventListener("submit", () => {
+    const name = form.elements.name.value.trim();
+    const phone = form.elements.phone.value.trim();
+    form.elements.subject.value = `משתמש חדש: ${name} ${phone}`.trim();
+  });
+}
+
 // Current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
