@@ -1,0 +1,9 @@
+# Cloudflare Workers — static site deploy
+# Deploy with:  npx wrangler deploy
+name = "maya-new"
+compatibility_date = "2026-07-06"
+
+# Serve the static site from ./site as Workers Static Assets.
+# No Worker script needed — this is an assets-only Worker.
+[assets]
+directory = "./site"
