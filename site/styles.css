@@ -78,8 +78,10 @@ a:hover { text-decoration: underline; }
 /* ===== Hero ===== */
 .hero {
   background:
-    linear-gradient(180deg, rgba(231,239,230,.6), rgba(246,242,234,0)),
-    radial-gradient(1200px 500px at 80% -10%, var(--green-tint), transparent);
+    linear-gradient(180deg, rgba(246,242,234,.82), rgba(246,242,234,.9)),
+    url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
   padding: clamp(60px, 12vh, 130px) 0;
   text-align: center;
 }
